@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--//tags -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet">
+<!--pop-up-box-->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<!--//pop-up-box-->
+<!-- price range -->
+<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+<!-- fonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+    <title>project - Free Bootstrap 4 CSS Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!--
+
+
+-->
+<style>
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 10000px;
+    position:relative;
+    margin:auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<img src="./assets/images/logo1.png" style="background-size: 50% 100%;">
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./assets/images/main-banner 1.jpg" style="width: 100%;">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./assets/images/Webp.net-resizeimage.jpg" style=" width: 100%;">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./assets/images/Webp.net-resizeimage (1).jpg" style="width:100%">
+   
+  </div>
+  
+  </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+<script>function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}</script>
+            
+<!-- top Products -->
+<div class="ads-grid">
+  <div class="container">
+    <!-- tittle heading -->
+    <h3 class="tittle-w3l">Water Supply Agencies
+      <span class="heading-style">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </h3>
+    <!-- //tittle heading -->
+    <!-- product left -->
+    <div class="side-bar col-md-3">
+      <div class="search-hotel">
+        <h3 class="agileits-sear-head">Search Here..</h3>
+        <form action="#" method="post">
+          <input type="search" placeholder="Product name..." name="search" required="">
+          <input type="submit" value=" ">
+        </form>
+      </div>
+      <!-- price range -->
+      <div class="range">
+        
+          <li>
+
+            <div id="slider-range"></div>
+            <input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+          </li>
+        </ul>
+      </div>
+      <!-- //price range -->
+      
+      <!-- discounts -->
+      <div class="left-side">
+        <h3 class="agileits-sear-head">Some Top Agencies</h3>
+        <ul>
+          <li>
+            <input type="checkbox" class="checked">
+            <span class="span">Zodiac  Water Agency</span>
+          </li>
+          <li>
+            <input type="checkbox" class="checked">
+            <span class="span">Jalapri Jal Agency</span>
+          </li>
+          <li>
+            <input type="checkbox" class="checked">
+            <span class="span">Chakroborty Water Supply</span>
+          </li>
+          <li>
+            <input type="checkbox" class="checked">
+            <span class="span">Damon Water Agency</span>
+          </li>
+          <li>
+            <input type="checkbox" class="checked">
+            <span class="span"> Potter Water Agency</span> </span>
+          </li>
+          <li>
+            <input type="checkbox" class="checked">
+            <a href="#C4">More Agencies...</a>
+            
+          </li>
+        </ul>
+      </div>
+      <!-- //discounts -->
+      <!-- reviews -->
+      <div class="customer-rev left-side">
+        <h3 class="agileits-sear-head">Customer Review</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <span>5.0</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <span>4.0</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <span>3.5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <span>3.0</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <span>2.5</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- //reviews -->
+       </div>
+    
+      <!-- Map with live location --> 
+       <a href="#" id="get_location">Get Location</a>
+       <div id="map">
+          <iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.7390767287!2d76.81307223784442!3d28.646677258361485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1623482385220!5m2!1sen!2sin" width=70% height="450" style="border:0;" allowfullscreen="" loading="lazy" scrolling="no"></iframe>
+       </div>
+
+       <script>
+         var c = function(pos) {
+            var lat = pos.coords.latitude,
+                long = pos.coords.longitude,
+                coords = lat + ','+ long;
+
+           document.getElementById('google_location').setAttribute('src','https://www.google.com/maps//q='+ coords +'&z=60&output=embed' );
+         }
+         
+         document.getElementId('get_location').onclick = function() {
+          navigator.getlocation.getCurrentPosition();
+          return true;
+         }
+       </script>
+  </div>
+  <br></br>
+       <div class=" w3-light-grey  w3-container">
+         <h1 style="text-align: center;" id="C4">List of Agencies Near You</h1>
+<br></br>
+         <h2 style="color: blue;"> Akash Water Supply Agency</h2>
+         <p>Address: 5-1A,Chandni Chowk ,New Delhi <br>
+        Phone Number: 867XXXXXXX
+        </p>
+        <h2 style="color: blue;"> Bharat Water Agency</h2>
+        <p>Address: B-5, Main Aadarsh nagar,New Delhi <br>
+       Phone Number: 980XXXXXXX
+       </p>
+
+        <h2 style="color: blue;"> Ganga Agency</h2>
+        <p>Address: 28-A, Vikas Puri,New Delhi <br>
+       Phone Number: 769XXXXXXX
+       </p>
+       <h2 style="color: blue;"> Jal Agency</h2>
+       <p>Address: 6-D,Pitampura ,New Delhi <br>
+      Phone Number: 809XXXXXXX
+      </p>
+
+
+
+       </div>
+            
+
+
+            </div>
+            
+
+            <!-- Footer -->
+            
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/transition.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- Chatbot-->
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "6f5bd518-c680-4657-be74-4d0b9c4600a2", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "12be5f3d-9d89-4835-a614-2fa4a7d6fc78", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+
+
+  </body>
+
+</html>

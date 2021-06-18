@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>project - Free Bootstrap 4 CSS Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!--
+
+
+-->
+<style>
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 10000px;
+    position:relative;
+    margin:auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/farmersinsurance.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<img src="./assets/images/logo1.png" style="background-size: 50% 100%;">
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="./assets/images/bannerinsurance1.png" style="width: 100%;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./assets/images/banner3insu.jpg" style=" width: 100%;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./assets/images/bannerinsurance2.png" style="width:100%">
+ 
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+<script>function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}</script>
+            
+
+            
+
+
+            <div class="w3-row-padding w3-padding-64 w3-container">
+              
+              <div class="">
+                
+                  <h1 Align="center">Farmer Insurance</h1>
+                  <h5 class="w3-padding-32" style=color:green;>Crop insurance is purchased by agricultural producers, and subsidized by the federal government, to protect against either the loss of their crops due to natural disasters, such as hail, drought, and floods, or the loss of revenue due to declines in the prices of agricultural commodities. The two general categories of crop insurance are called crop-yield insurance and crop-revenue insurance. On average, the federal government subsidizes 62 percent of the premium. In 2019, crop insurance policies covered almost 380 million acres. Major crops are insurable in most counties where they are grown, and approximately 90% of U.S. crop acreage is insured under the federal crop insurance program. Four crops—corn, cotton, soybeans, and wheat— typically account for more than 70% of total enrolled acres. For these major crops, a large share of plantings is covered by crop insurance.</h5>
+                    <h5 class=w3-padding-32">Objective of Pradhan Mantri Fasal Bima Yojana</h5>
+            
+                  <p style=color:#717171;>To provide insurance coverage and financial support to the farmers in the event of failure of any of the notified crop as a result of natural calamities, pests & diseases.
+                    To stabilise the income of farmers to ensure their continuance in farming.
+                    To encourage farmers to adopt innovative and modern agricultural practices.
+                    To ensure flow of credit to the agriculture sector.
+                    
+                    
+                    </p>
+                
+            
+                
+              </div>
+            </div>
+            
+            <!-- Second Grid -->
+            <div class=" w3-light-grey w3-padding-32 w3-container">
+              
+              <div class="">
+                
+                <div class=" w3-center w3-xlarge ">
+                  <img src="https://static.vikaspedia.in/media/images_en/agriculture/agri-insurance/pmfby.jpg" style="padding-top:100px;padding-right: 50px; float: left;"/>
+                </div>
+<!--             
+                <div class="w3-twothird" >
+                  <h1>Farmers to be covered</h1>
+                  <h5 style="color: green;"  class="w3-padding-32">
+                    <ul>
+                      <li>Farmers in the notified area who possess a Crop Loan account/KCC account (called as Loanee Farmers) to whom credit limit is sanctioned/renewed for the notified crop during the crop season.</li>
+                      <li>Farmers from both the urban and rural areas</li>
+                      <li>Small and marginal farmers families</li>
+
+                    </ul>
+                  </h5>
+
+                  <h1>Non-Eligible</h1>
+                  <h5 style="color: green;" class="w3-padding-32">
+                    <ul>
+                      <li>All Institutional Land holders.</li>
+                     <li>Present or retired officers and employees of state/central government as well as PSUs and government autonomous bodies</li>
+                     <li>Beneficiaries with higher economic status are not eligible</li>
+                     <li>Those who pay income tax</li>
+                     <li>Farmer families holding constitutional posts</li>
+                     <li>Professionals like doctors, engineers and lawyers</li>
+                     <li>Retired pensioners with a monthly pension of over Rs 10,000</li>
+                    </ul>
+                  </h5> 
+                </div> -->
+              </div>
+            </div>
+            
+            <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+                <h1 Align="center" class="w3-margin w3-xlarge">HIGHLIGHTS</h1>
+
+              <h5> 
+                <ul Align="left">
+                  <li> There will be a uniform premium of only 2% to be paid by farmers for all Kharif crops and 1.5% for all Rabi crops. In case of annual commercial and horticultural crops, the premium to be paid by farmers will be only 5%. The premium rates to be paid by farmers are very low and balance premium will be paid by the Government to provide full insured amount to the farmers against crop loss on account of natural calamities.</li>
+                  <li>PMFBY is a replacement scheme of  NAIS / MNAIS, there will be exemption from Service Tax liability of all the services involved in the implementation of the scheme. It is estimated that the new scheme will ensure about 75-80 per cent of subsidy for the farmers in insurance premium.
+                    .</li>
+                </ul>
+              </h5>
+            </div>
+            
+            <!--Farmer corner-->
+          <div class="Moreinfo">
+            <h1  Align="center">Insurance Policies</h1>
+          </div>
+          
+            <section class="services">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="service-item first-item">
+                      <div class="icon"></div>
+                      <h4><a href="https://www.acko.com/government-health-insurance-schemes-in-india/">Health Insurance </a></h4>
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-item second-item">
+                      <div class="icon"></div>
+                      <h4><a href="https://pmfby.gov.in/farmerRegistrationForm/">Crop Insurance</a> </h4>
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-item third-item">
+                      <div class="icon"></div>
+                      <h4><a href="https://en.wikipedia.org/wiki/Agricultural_insurance_in_India">Agricultural Insurance 
+                        Schemes</a></h4>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-item fourth-item">
+                      <div class="icon"></div>
+                      <h4><a href="https://www.bankbazaar.com/miscellaneous-insurance/rural-insurance.html">Rural 
+                        Insurance</a></h4>
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-item fivth-item">
+                      <div class="icon"></div>
+                      <h4><a href="http://mkisan.gov.in/downloadmobileapps.aspx">Crop 
+                        Insurance Mobile App</a></h4>
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-item sixth-item">
+                      <div class="icon"></div>
+                      <h4><a href="https://pmfby.gov.in/insuranceCompanyDirectory" 
+">                      Crop Insurance Companies Directory</h4>
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-item seventh-item">
+                      <div class="icon"></div>
+                      <h4><a href="https://pmfby.gov.in/">Check My PMFBY Status</a></h4>
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-item eigth-item">
+                      <div class="icon"></div>
+                      <h4><a href="https://pmfby.gov.in/farmerLogin
+                        ">
+                        Farmer Login</a></h4>
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-item ninth-item">
+                      <div class="icon"></div>
+                      <h4><a href="https://pmfby.gov.in/ "> Official Website</a></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            
+
+           
+     
+          
+
+            
+
+            <!-- Footer -->
+            
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/transition.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+    <!-- Chatbot-->
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "6f5bd518-c680-4657-be74-4d0b9c4600a2", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "12be5f3d-9d89-4835-a614-2fa4a7d6fc78", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+
+
+  </body>
+
+</html>
